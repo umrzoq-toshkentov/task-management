@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Task, TaskStatus } from './task..model';
+import { Task, TaskStatus } from './task.model';
 import { uniqueId } from 'lodash';
 
 @Injectable()
