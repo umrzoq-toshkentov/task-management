@@ -7,6 +7,10 @@ import { uniqueId } from 'lodash';
 export class TasksService {
   private tasks: Task[] = [];
 
+  getTaskById(id: string): Task {
+    return this.tasks.find((item) => item.id === id);
+  }
+
   getAllTasks(): Task[] {
     return this.tasks;
   }
